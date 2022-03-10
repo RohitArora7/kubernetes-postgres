@@ -16,3 +16,18 @@ kubectl apply -f - << EOF
 > EOF
 
 ```
+
+
+```bash
+kubectl get po
+kubectl describe po postgres
+```
+
+```bash
+kubectl exec -it postgres -- bash
+```
+
+```bash
+PGPASSWORD=postgres
+psql -U postgres
+```
