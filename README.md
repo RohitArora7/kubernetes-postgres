@@ -31,3 +31,9 @@ kubectl exec -it postgres -- bash
 PGPASSWORD=postgres
 psql -U postgres
 ```
+
+
+
+```bash
+helm install postgresql bitnami/postgresql --set postgresqlPassword=postgres --set postgresqlDatabase=magma 
+```
